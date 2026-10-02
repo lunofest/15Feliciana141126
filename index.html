@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Invitación de Feliciana — Mis quince años" />
+  <meta property="og:title" content="Feliciana - Mis XV Años" />
+  <meta property="og:description"
+    content="¡La cuenta regresiva ha comenzado! Descubre los detalles y confirma tu asistencia." />
+  <meta property="og:image" content="https://lunofest.github.io/15Feliciana141126/assets/imagenes/miniatura.png" />
+  <meta property="og:url" content="https://lunosfest.github.io/15Feliciana141126/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="image/png" />
+  <script src="cache.js"></script>
+  <script src="main.js"></script>
+  <title>Feliciana — Invitación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v18" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+
+<body class="page">
+
+  <video class="fondo-video" src="assets/body.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+
+  <div style="display: none;" class="intro" id="intro" aria-labelledby="intro-title">
+    <div class="intro__content">
+      <p class="intro__eyebrow">Mis quince años</p>
+      <p class="intro__date">14 · 11 · 2026</p>
+      <p class="intro__initial" aria-hidden="true">F</p>
+      <h1 class="intro__title" id="intro-title">Feliciana</h1>
+      <p class="intro__text">Hoy No seguimos luces... somos el brillo de la fiesta</p>
+      <div class="intro__actions">
+        <button class="button button--light" type="button" data-open-invitation data-music="false">Abrir
+          invitación</button>
+        <button class="button button--outline" type="button" data-open-invitation data-music="true">Abrir con
+          música</button>
+      </div>
+    </div>
+    <p class="intro__credit">Creado con tecnología de invitaciones digitales</p>
+  </div>
+
+  <div class="musica">
+    <audio src="assets/musica.mp3"></audio>
+    <button class="musica__button musica__button--play">
+      <span class="musica__icon musica__icon--play">▶</span>
+      <span class="musica__icon musica__icon--pause">||</span>
+    </button>
+  </div>
+
+
+  <header class="header">
+
+    <!-- <img src="assets/imagenes/logo.webp" class="header__logo" alt="Logo" /> -->
+
+    <img src="assets/imagenes/vector_top.webp" class="vector_top" alt="">
+
+    <div class="header__arrow" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+
+  </header>
+
+
+
+  <main class="invitation" id="inicio">
+
+    <section class="section contenedor" id="cuenta-regresiva">
+      <div class="section__inner">
+
+        <h2 class="section__title"><lord-icon class="section__icon section__icon--timer"
+            data-src="./assets/icons/disco.json" src="./assets/icons/disco.json" trigger="loop"
+            colors="primary:#aaff03,secondary:#aaff03" aria-label="Temporizador"
+            style="filter:drop-shadow(0 0 10px #aaff03) drop-shadow(0 0 20px #aaff03)"></lord-icon>Falta poco</h2>
+        <p style="color: #aaff03;" class="section__lead">Para mi gran noche</p>
+        <div class="countdown" data-countdown data-date="2026-11-14T21:30:00-03:00" aria-label="Cuenta regresiva">
+          <div class="countdown__item"><strong data-unit="days">00</strong><span>días</span></div>
+          <div class="countdown__item"><strong data-unit="hours">00</strong><span>horas</span></div>
+          <div class="countdown__item"><strong data-unit="minutes">00</strong><span>min</span></div>
+          <div class="countdown__item"><strong data-unit="seconds">00</strong><span>seg</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contenedor" id="fecha">
+      <div class="section__inner fecha">
+        <h2 class="section__title"><lord-icon class="section__icon section__icon--calendar"
+            data-src="./assets/icons/calendario.json" src="./assets/icons/calendario.json" trigger="loop"
+            colors="primary:#ff9000,secondary:#ff9000" aria-label="Agendar fecha"
+            style="filter:drop-shadow(0 0 10px #ff9000) drop-shadow(0 0 20px #ff9000)"></lord-icon>Agendá la fecha</h2>
+        <div class="calendar" aria-label="Calendario de noviembre de 2026">
+          <div class="calendar__header"><span>Noviembre</span><strong>2026</strong></div>
+          <div class="calendar__week">
+            <span>LUN</span><span>MAR</span><span>MIE</span><span>JUE</span><span>VIE</span><span>SAB</span><span>DOM</span>
+          </div>
+          <div class="calendar__grid" data-calendar-grid></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contenedor" id="ubicaciones">
+      <div class="section__inner">
+        <h2 class="section__title"><lord-icon class="section__icon" data-src="./assets/icons/ubicacion.json"
+            src="./assets/icons/ubicacion.json" trigger="loop" colors="primary:#ab00fe,secondary:#ab00fe"
+            aria-label="Ubicación"
+            style="filter:drop-shadow(0 0 10px #ab00fe) drop-shadow(0 0 20px #ab00fe)"></lord-icon>Cuándo y dónde</h2>
+        <p style="color: #ab00fe;" class="section__lead">Acompañame en la misa</p>
+        <div class="events">
+          <article class="event-card">
+            <img src="assets/vectores/misa.svg" class="event-card__icon" alt="">
+            <h3 class="event-card__title">Misa</h3>
+            <p class="event-card__date">Sábado 14 de Noviembre</p>
+            <p class="event-card__time">08:30hs</p>
+            <p class="event-card__place">Capilla Divina Misericordia</p>
+            <p class="event-card__detail">Dr. Alfredo Gargaro 330, Santiago del Estero</p>
+            <div class="event-card__actions"><a class="button button--ghost"
+                href="https://maps.app.goo.gl/5FnkqSpo8XBJopqU9" target="_blank">Ver
+                ubicación</a></div>
+          </article>
+
+          <article class="event-card">
+            <p style="color: #ab00fe;" class="section__lead">Te espero para celebrar</p>
+            <img src="assets/vectores/fiesta.svg" class="event-card__icon" alt="">
+            <h3 class="event-card__title">Fiesta</h3>
+            <p class="event-card__date">Sábado 14 de Noviembre</p>
+            <p class="event-card__time">21:30</p>
+            <p class="event-card__place">Te espero en Recreo Lali, El Churqui</p>
+            <!-- <p class="event-card__detail">__________</p> -->
+            <div style="display: none;" class="event-card__actions"><a class="button button--ghost"
+                href="https://maps.app.goo.gl/ZYHWpSQXKyRsUhgK8" target="_blank">Ver
+                ubicación</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="fotos">
+      <h3 class=" fotos__title" data-aos="fade-up">Mis fotos</h3>
+
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="assets/imagenes/fotos/uno.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes/fotos/dos.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes/fotos/tres.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes/fotos/cuatro.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes/fotos/cinco.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imagenes/fotos/seis.webp" />
+          </div>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="section contenedor" id="album">
+      <div class="section__inner">
+        <h2 class="section__title">Álbum compartido</h2>
+
+        <p class="section__copy">Quiero inmortalizar este maravilloso momento, guardando fotos y para ello
+          tengo mi álbum compartido, ayudame subiendo tus mejores capturas!</p>
+        <a class="button" href="https://photos.app.goo.gl/tYomHNQcwmQJdCvB7" target="_blank" rel="noopener">Subir
+          fotos</a>
+      </div>
+    </section>
+
+    <section class="section contenedor" id="instagram">
+      <div class="section__inner">
+        <h2 class="section__title">Instagram</h2>
+        <p style="color: #aaff03;" class="section__lead">@feliciana_alderete_</p>
+        <p class="section__copy">Ó podés compartir tus fotos y videos de la fiesta en Instagram y etiquétame</p>
+        <a class="button" href="https://www.instagram.com/feliciana_alderete_?stkn=Mmp1M2hyaWliM2hy&utm_source=qr"
+          target="_blank" rel="noopener">Seguir en Instagram</a>
+      </div>
+    </section>
+
+    <section class="section contenedor" id="itinerario">
+      <div class="section__inner">
+        <h2 class="section__title">
+          <svg class="section__icon section__icon--reloj" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            fill="none" stroke="#ff9000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line class="reloj-min" x1="12" y1="12" x2="12" y2="6"></line>
+            <line class="reloj-hor" x1="12" y1="12" x2="14" y2="14"></line>
+            <circle cx="12" cy="12" r="1" fill="#ff9000"></circle>
+          </svg>
+          Itinerarios
+        </h2>
+        <p style="color: #ff9000;" class="section__lead">Horario de la fiesta</p>
+        <div class="itinerario">
+          <div class="itinerario__item">
+            <span class="itinerario__label">Ingreso de invitados</span>
+            <span class="itinerario__time">21:30</span>
+          </div>
+          <div class="itinerario__item">
+            <span class="itinerario__label">Mi Ingreso</span>
+            <span class="itinerario__time">22:00</span>
+          </div>
+          <div class="itinerario__item">
+            <span class="itinerario__label">Cena</span>
+            <span class="itinerario__time">23:00</span>
+          </div>
+          <div class="itinerario__item">
+            <span class="itinerario__label">Inicio del baile</span>
+            <span class="itinerario__time">00:00</span>
+          </div>
+          <div class="itinerario__item">
+            <span class="itinerario__label">Fin de la fiesta</span>
+            <span class="itinerario__time">06:00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contenedor" id="dress-code">
+      <div class="section__inner">
+        <h2 class="section__title"><lord-icon class="section__icon" data-src="./assets/icons/armario.json"
+            src="./assets/icons/armario.json" trigger="loop" colors="primary:#00aaff,secondary:#00aaff"
+            aria-label="Vestimenta"
+            style="filter:drop-shadow(0 0 10px #00aaff) drop-shadow(0 0 20px #00aaff)"></lord-icon>Dress Code</h2>
+        <div class="dress-code__icons">
+          <img src="assets/vectores/dresscodeMUJER.svg" alt="Mujer" class="dress-code__icon">
+          <img src="assets/vectores/dresscodeVARON.svg" alt="Varón" class="dress-code__icon">
+        </div>
+        <p class="dress-code">ELEGANTE ESPORT</p>
+      </div>
+    </section>
+
+    <section style="display: none;" class="section contenedor" id="canciones">
+      <div class="section__inner">
+        <h2 class="section__title">Sugerí una canción</h2>
+        <p class="section__lead">¿Qué tema no puede faltar en mi fiesta?</p>
+        <form class="form" data-song-form><label class="form__label">Tu nombre (opcional)<input class="form__input"
+              name="name" type="text" /></label><label class="form__label">Canción — Artista<input class="form__input"
+              name="song" type="text" required /></label><button class="button" type="submit">Sugerir
+            canción</button>
+          <p class="form-message" data-song-message role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contenedor" id="regalos">
+      <div class="section__inner">
+        <h2 class="section__title">Regalos</h2>
+        <p class="section__copy">Quiero que sepas que tu presencia es lo más importante en mi fiesta y si deseas hacerme
+          un presente, podrás colocar tu sobrecito en la urna, o también podés hacerlo por
+          transferencia a mi cuenta... y recuerda: ¡Tu cariño es el mejor regalo que puedo recibir!</p>
+        <div class="gift">
+          <h3 class="gift__title">Transferencia</h3>
+          <button style="background: #00aaff;" class="alias" type="button" data-copy="felyxv"><span>ALIAS:</span>
+            <strong>felyxv</strong><small>Toca para copiar</small></button>
+          <button style="background: #ff9000;" class="alias" type="button" data-copy="0000003100087914439618"><span>CBU:</span>
+            <strong>0000003100087914439618</strong><small>Toca para copiar</small></button>
+          <!-- <p class="gift__titular">Titular: Marcela Natalia Marder (Mercado Pago)</p> -->
+          <p class="form-message" data-alias-message role="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contenedor agradecimientos" id="agradecimientos">
+      <div class="section__inner">
+        <h2 class="section__title">Agradecimientos</h2>
+        <p class="section__copy">Deseo expresar mi profundo agradecimiento a todos mis familiares y amigos que me
+          acompañan en esta etapa, y quiero destacar el valioso sacrificio realizado especialmente por mis padres, cuyo
+          apoyo fué fundamental para hacer realidad este momento tan significativo en mi vida</p>
+        <div class="gift">
+          <h3 class="gift__title">Mis padres</h3>
+          <p class="section__copy">Elio Alderete<br />Claudia Miranda</p>
+          <h3 class="gift__title">Mis Padrinos</h3>
+          <p class="section__copy">Marcelo Miranda<br />Adriana Alderete</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contenedor" id="confirmacion">
+      <div class="section__inner">
+        <h2 class="section__title section__title__active"><lord-icon class="section__icon section__icon--no-glow"
+            data-src="./assets/icons/sobre.json" src="./assets/icons/sobre.json" trigger="loop"
+            colors="primary:#aaff03,secondary:#aaff03" aria-label="Confirmación"></lord-icon>Confirmá tu asistencia</h2>
+        <p class="section__lead">Agradecemos tu respuesta</p>
+        <p class="section__copy">
+          Recordá que tenés hasta el día <strong>15 de Octubre de 2026</strong> para confirmar tu presencia
+        </p>
+        <div id="asistencia">
+          <div class="form" data-confirm-radios>
+            <label class="form__label"><input type="radio" name="attendanceOption" value="SI ASISTIRÉ" required /> SI
+              ASISTIRÉ</label>
+            <label class="form__label"><input type="radio" name="attendanceOption" value="NO ASISTIRÉ" required /> NO
+              ASISTIRÉ</label>
+          </div>
+          <div class="form">
+            <label class="form__label" for="userFullName">Nombre y Apellido:<input class="form__input" type="text"
+                id="userFullName" placeholder="Tu nombre y apellido" required /></label>
+            <label class="form__label" for="customMessage">Mensaje opcional:<textarea
+                class="form__input form__input--textarea" id="customMessage"
+                placeholder="Mensaje opcional"></textarea></label>
+            <button class="button button__confirmacion" type="button" id="botoncito1">Confirmar a Feliciana</button>
+            <button class="button button__confirmacion" type="button" id="botoncito2">Confirmar a Claudia</button>
+          </div>
+        </div>
+        <p class="section__note section__note__active">Tocá el botón y completá tu confirmación en un instante.
+        </p>
+        <p class="form-message" data-confirm-message role="status"></p>
+      </div>
+    </section>
+
+    <section class="section-frase">
+      <div class="frase">
+        <img src="assets/vectores/apostrofe.svg" class="frase__comilla frase__comilla--izq" alt="">
+        <p class="frase__texto">La cuenta regresiva terminó... ahora solo queda disfrutar, bailar y hacer historia</p>
+        <img src="assets/vectores/apostrofe.svg" class="frase__comilla frase__comilla--der" alt="">
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="footer__final1">
+    <div class="footer__inner1">
+      <div class="footer__brand1">
+        <p class="footer__text1">
+          Página creada por <strong>Luno Digitales</strong>
+          para los 15 años de <strong>Feliciana</strong>.<br>
+          Todos los derechos reservados. <br>Visítanos en:
+        </p>
+
+      </div>
+
+
+      <a class="footer__site1" href="https://www.luno.net.ar" target="_blank" rel="noopener">www.luno.net.ar</a>
+      <div class="footer__social3">
+        <p class="footer__follow1">Síguenos en nuestras redes</p>
+        <a class="icon-link1"
+          href="https://www.instagram.com/lunodigitales?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          aria-label="Instagram de Luno Digitales">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none" />
+            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+            <circle cx="18.2" cy="5.8" r="0.7" fill="currentColor" />
+          </svg>
+        </a>
+        <a class="icon-link1" href="https://www.facebook.com/profile.php?id=61581720891655" target="_blank"
+          rel="noopener" aria-label="Facebook de Luno Digitales">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <style>
+    /* ///////////////// footer /////////////////////// */
+
+
+    .footer__final1 {
+      background: linear-gradient(180deg, #00aaff 0%, #00aaff 100%);
+      color: #ffff;
+      padding: 1.5em 0;
+
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      font-size: 14px;
+      width: clamp(100px, 100%, 1800px);
+      text-align: center;
+      margin: 0 auto 0;
+    }
+
+    .footer__inner1 {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+      text-align: center;
+      padding: 0 1em;
+    }
+
+    .footer__text1 {
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .footer__text1 strong {
+      color: #313131;
+      font-weight: 700;
+    }
+
+    .footer__site1 {
+      display: inline-block;
+      margin-top: 8px;
+      text-decoration: none;
+      color: #ffff;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .footer__site1:hover {
+      text-decoration: underline;
+    }
+
+    .footer__social3 {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 5px;
+    }
+
+    .footer__follow1 {
+      margin: 0;
+      font-size: 14px;
+      color: #ffff;
+      font-weight: 500;
+    }
+
+    .footer__final1 .icon-link1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #414141;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .footer__final1 .icon-link1 svg {
+      width: 28px !important;
+      height: 28px !important;
+      display: block;
+      margin: 0;
+    }
+
+    .footer__final1 .icon-link1:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+
+
+  <button class="music-toggle" type="button" data-music-toggle aria-pressed="false" hidden>Activar música</button>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js?v18"></script>
+</body>
+
+</html>
